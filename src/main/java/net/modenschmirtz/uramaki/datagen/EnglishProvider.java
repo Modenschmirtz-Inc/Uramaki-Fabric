@@ -15,12 +15,12 @@ public class EnglishProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
-        translationBuilder.add(ModItems.TUNA, "Tuna");
+        translationBuilder.add(ModItems.TUNA, "Raw Tuna");
         translationBuilder.add(ModItems.COOKED_TUNA, "Cooked Tuna");
 
-        translationBuilder.add(ModItems.COD_FILLET, "Cod Fillet");
-        translationBuilder.add(ModItems.SALMON_FILLET, "Salmon Fillet");
-        translationBuilder.add(ModItems.TUNA_FILLET, "Tuna Fillet");
+        translationBuilder.add(ModItems.COD_FILLET, "Raw Cod Fillet");
+        translationBuilder.add(ModItems.SALMON_FILLET, "Raw Salmon Fillet");
+        translationBuilder.add(ModItems.TUNA_FILLET, "Raw Tuna Fillet");
 
         translationBuilder.add(ModItems.COOKED_COD_FILLET, "Cooked Cod Fillet");
         translationBuilder.add(ModItems.COOKED_SALMON_FILLET, "Cooked Salmon Fillet");
