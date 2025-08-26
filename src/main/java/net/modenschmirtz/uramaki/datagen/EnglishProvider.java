@@ -17,6 +17,7 @@ public class EnglishProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.TUNA, "Raw Tuna");
         translationBuilder.add(ModItems.COOKED_TUNA, "Cooked Tuna");
+        translationBuilder.add(ModItems.GOLDEN_FISH, "Golden Fish");
 
         translationBuilder.add(ModItems.COD_FILLET, "Raw Cod Fillet");
         translationBuilder.add(ModItems.SALMON_FILLET, "Raw Salmon Fillet");

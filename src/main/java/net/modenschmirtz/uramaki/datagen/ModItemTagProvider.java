@@ -16,7 +16,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(ItemTags.FISHES).add(ModItems.TUNA).add(ModItems.COOKED_TUNA);
+        getOrCreateTagBuilder(ItemTags.FISHES).add(ModItems.TUNA).add(ModItems.COOKED_TUNA).add(ModItems.GOLDEN_FISH);
         getOrCreateTagBuilder(ConventionalItemTags.RAW_FISH_FOODS).add(ModItems.TUNA);
         getOrCreateTagBuilder(ConventionalItemTags.RAW_FISHES_FOODS).add(ModItems.TUNA);
         getOrCreateTagBuilder(ConventionalItemTags.COOKED_FISH_FOODS).add(ModItems.COOKED_TUNA);
