@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "uramaki",
+	"version": "${version}",
+	"name": "Uramaki",
+	"description": "This mod adds sushi, and touches fishing.",
+	"authors": [
+		"Lead Developer: NTRDeal",
+		"Designer/Artist: Blockadile",
+		"Developer/Artist: Evan2Awesome"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/uramaki",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.modenschmirtz.uramaki.Uramaki"
+		],
+		"client": [
+			"net.modenschmirtz.uramaki.UramakiClient"
+		],
+		"fabric-datagen": [
+			"net.modenschmirtz.uramaki.UramakiDataGenerator"
+		]
+	},
+	"mixins": [
+		"uramaki.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"geckolib": ">=4.7.7"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
