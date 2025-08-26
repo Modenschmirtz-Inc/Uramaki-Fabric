@@ -5,8 +5,20 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.modenschmirtz.uramaki.Uramaki;
+import net.modenschmirtz.uramaki.item.components.ModFoodComponents;
 
 public class ModItems {
+    public static final Item TUNA = registerItem("tuna", new Item(new Item.Settings().food(ModFoodComponents.TUNA)));
+    public static final Item COOKED_TUNA = registerItem("cooked_tuna", new Item(new Item.Settings().food(ModFoodComponents.COOKED_TUNA)));
+
+    public static final Item COD_FILLET = registerItem("cod_fillet", new Item(new Item.Settings().food(ModFoodComponents.COD_FILLET)));
+    public static final Item SALMON_FILLET = registerItem("salmon_fillet", new Item(new Item.Settings().food(ModFoodComponents.SALMON_FILLET)));
+    public static final Item TUNA_FILLET = registerItem("tuna_fillet", new Item(new Item.Settings().food(ModFoodComponents.TUNA_FILLET)));
+
+    public static final Item COOKED_COD_FILLET = registerItem("cooked_cod_fillet", new Item(new Item.Settings().food(ModFoodComponents.COOKED_COD_FILLET)));
+    public static final Item COOKED_SALMON_FILLET = registerItem("cooked_salmon_fillet", new Item(new Item.Settings().food(ModFoodComponents.COOKED_SALMON_FILLET)));
+    public static final Item COOKED_TUNA_FILLET = registerItem("cooked_tuna_fillet", new Item(new Item.Settings().food(ModFoodComponents.COOKED_TUNA_FILLET)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Uramaki.MOD_ID, name), item);
     }

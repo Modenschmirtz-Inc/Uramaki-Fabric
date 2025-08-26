@@ -11,7 +11,8 @@
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/project/uramaki",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Modenschmirtz-Inc/Uramaki",
+		"issues": "https://github.com/Modenschmirtz-Inc/Uramaki/issues"
 	},
 	"license": "MIT",
 	"icon": "icon.png",
