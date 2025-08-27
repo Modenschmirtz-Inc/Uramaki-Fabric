@@ -4,13 +4,14 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.modenschmirtz.uramaki.Uramaki;
 import net.modenschmirtz.uramaki.item.components.ModFoodComponents;
 
 public class ModItems {
     public static final Item TUNA = registerItem("tuna", new Item(new Item.Settings().food(ModFoodComponents.TUNA)));
     public static final Item COOKED_TUNA = registerItem("cooked_tuna", new Item(new Item.Settings().food(ModFoodComponents.COOKED_TUNA)));
-    public static final Item GOLDEN_FISH = registerItem("golden_fish", new Item(new Item.Settings().food(ModFoodComponents.GOLDEN_FISH)));
+    public static final Item GOLDEN_FISH = registerItem("golden_fish", new Item(new Item.Settings().food(ModFoodComponents.GOLDEN_FISH).rarity(Rarity.RARE)));
 
     public static final Item COD_FILLET = registerItem("cod_fillet", new Item(new Item.Settings().food(ModFoodComponents.COD_FILLET)));
     public static final Item SALMON_FILLET = registerItem("salmon_fillet", new Item(new Item.Settings().food(ModFoodComponents.SALMON_FILLET)));

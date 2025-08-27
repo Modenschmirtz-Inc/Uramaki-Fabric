@@ -16,6 +16,7 @@ public class ModItemGroups {
                     .entries((context, entries) -> {
                         entries.add(ModItems.TUNA);
                         entries.add(ModItems.COOKED_TUNA);
+                        entries.add(ModItems.GOLDEN_FISH);
 
                         entries.add(ModItems.COD_FILLET);
                         entries.add(ModItems.SALMON_FILLET);

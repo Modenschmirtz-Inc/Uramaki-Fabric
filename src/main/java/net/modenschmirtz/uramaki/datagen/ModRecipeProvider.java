@@ -23,8 +23,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     private static <T extends AbstractCookingRecipe> void generateModCookingRecipes(RecipeExporter exporter, String cooker, RecipeSerializer<T> serializer, AbstractCookingRecipe.RecipeFactory<T> recipeFactory, int cookingTime){
         offerFoodCookingRecipe(exporter, cooker, serializer, recipeFactory, cookingTime, ModItems.TUNA, ModItems.COOKED_TUNA, 0.35F);
-        offerFoodCookingRecipe(exporter, cooker, serializer, recipeFactory, Math.round(cookingTime*0.5f), ModItems.COD_FILLET, ModItems.COOKED_COD_FILLET, 0.175F);
-        offerFoodCookingRecipe(exporter, cooker, serializer, recipeFactory, Math.round(cookingTime*0.5f), ModItems.SALMON_FILLET, ModItems.COOKED_SALMON_FILLET, 0.175F);
-        offerFoodCookingRecipe(exporter, cooker, serializer, recipeFactory, Math.round(cookingTime*0.5f), ModItems.TUNA_FILLET, ModItems.COOKED_TUNA_FILLET, 0.175F);
+        offerFoodCookingRecipe(exporter, cooker, serializer, recipeFactory, cookingTime, ModItems.COD_FILLET, ModItems.COOKED_COD_FILLET, 0.175F);
+        offerFoodCookingRecipe(exporter, cooker, serializer, recipeFactory, cookingTime, ModItems.SALMON_FILLET, ModItems.COOKED_SALMON_FILLET, 0.175F);
+        offerFoodCookingRecipe(exporter, cooker, serializer, recipeFactory, cookingTime, ModItems.TUNA_FILLET, ModItems.COOKED_TUNA_FILLET, 0.175F);
     }
 }

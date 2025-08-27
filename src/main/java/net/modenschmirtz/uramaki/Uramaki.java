@@ -1,7 +1,6 @@
 package net.modenschmirtz.uramaki;
 
 import net.fabricmc.api.ModInitializer;
-
 import net.modenschmirtz.uramaki.block.ModBlocks;
 import net.modenschmirtz.uramaki.item.ModItemGroups;
 import net.modenschmirtz.uramaki.item.ModItems;

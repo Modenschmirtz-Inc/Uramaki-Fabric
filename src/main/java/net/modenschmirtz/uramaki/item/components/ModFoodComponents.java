@@ -12,11 +12,11 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 1), 1F)
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 900, 0), 1F).build();
 
-    public static final FoodComponent COD_FILLET = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1F).build();
-    public static final FoodComponent SALMON_FILLET = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1F).build();
-    public static final FoodComponent TUNA_FILLET = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1F).build();
+    public static final FoodComponent COD_FILLET = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1F).snack().build();
+    public static final FoodComponent SALMON_FILLET = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1F).snack().build();
+    public static final FoodComponent TUNA_FILLET = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1F).snack().build();
 
-    public static final FoodComponent COOKED_COD_FILLET = new FoodComponent.Builder().nutrition(3).saturationModifier(0.3F).build();
-    public static final FoodComponent COOKED_SALMON_FILLET = new FoodComponent.Builder().nutrition(3).saturationModifier(0.4F).build();
-    public static final FoodComponent COOKED_TUNA_FILLET = new FoodComponent.Builder().nutrition(3).saturationModifier(0.4F).build();
+    public static final FoodComponent COOKED_COD_FILLET = new FoodComponent.Builder().nutrition(3).saturationModifier(0.3F).snack().build();
+    public static final FoodComponent COOKED_SALMON_FILLET = new FoodComponent.Builder().nutrition(3).saturationModifier(0.4F).snack().build();
+    public static final FoodComponent COOKED_TUNA_FILLET = new FoodComponent.Builder().nutrition(3).saturationModifier(0.4F).snack().build();
 }
