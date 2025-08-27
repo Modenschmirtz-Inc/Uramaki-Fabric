@@ -1,15 +1,23 @@
 package net.modenschmirtz.uramaki.item;
 
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.NbtComponent;
+import net.minecraft.fluid.Fluids;
+import net.minecraft.item.EntityBucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.modenschmirtz.uramaki.Uramaki;
+import net.modenschmirtz.uramaki.entity.ModEntities;
 import net.modenschmirtz.uramaki.item.components.ModFoodComponents;
+import net.modenschmirtz.uramaki.item.custom.TunaItem;
 
 public class ModItems {
-    public static final Item TUNA = registerItem("tuna", new Item(new Item.Settings().food(ModFoodComponents.TUNA)));
+
+    public static final Item TUNA = registerItem("tuna", new TunaItem(new Item.Settings().food(ModFoodComponents.TUNA)));
     public static final Item COOKED_TUNA = registerItem("cooked_tuna", new Item(new Item.Settings().food(ModFoodComponents.COOKED_TUNA)));
     public static final Item GOLDEN_FISH = registerItem("golden_fish", new Item(new Item.Settings().food(ModFoodComponents.GOLDEN_FISH).rarity(Rarity.RARE)));
 
@@ -20,6 +28,14 @@ public class ModItems {
     public static final Item COOKED_COD_FILLET = registerItem("cooked_cod_fillet", new Item(new Item.Settings().food(ModFoodComponents.COOKED_COD_FILLET)));
     public static final Item COOKED_SALMON_FILLET = registerItem("cooked_salmon_fillet", new Item(new Item.Settings().food(ModFoodComponents.COOKED_SALMON_FILLET)));
     public static final Item COOKED_TUNA_FILLET = registerItem("cooked_tuna_fillet", new Item(new Item.Settings().food(ModFoodComponents.COOKED_TUNA_FILLET)));
+
+    public static final Item TUNA_BUCKET = registerItem("tuna_bucket",
+            new EntityBucketItem(
+                    ModEntities.TUNA,
+                    Fluids.WATER,
+                    SoundEvents.ITEM_BUCKET_EMPTY_FISH,
+                    new Item.Settings().maxCount(1).component(DataComponentTypes.BUCKET_ENTITY_DATA, NbtComponent.DEFAULT)
+            ));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Uramaki.MOD_ID, name), item);

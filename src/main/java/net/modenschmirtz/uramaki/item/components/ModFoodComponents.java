@@ -7,7 +7,7 @@ import net.minecraft.entity.effect.StatusEffects;
 public class ModFoodComponents {
     public static final FoodComponent TUNA = new FoodComponent.Builder().nutrition(2).saturationModifier(0.1F).build();
     public static final FoodComponent COOKED_TUNA = new FoodComponent.Builder().nutrition(6).saturationModifier(0.8F).build();
-    public static final FoodComponent GOLDEN_FISH = new FoodComponent.Builder().nutrition(2).saturationModifier(0.1F)
+    public static final FoodComponent GOLDEN_FISH = new FoodComponent.Builder().nutrition(6).saturationModifier(0.8F)
             .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 3000, 0), 1F)
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 1), 1F)
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 900, 0), 1F).build();
