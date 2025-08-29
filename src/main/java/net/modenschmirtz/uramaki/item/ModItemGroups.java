@@ -25,6 +25,8 @@ public class ModItemGroups {
                         entries.add(ModItems.COOKED_COD_FILLET);
                         entries.add(ModItems.COOKED_SALMON_FILLET);
                         entries.add(ModItems.COOKED_TUNA_FILLET);
+
+                        entries.add(ModItems.TUNA_BUCKET);
                         entries.add(ModItems.TUNA_SPAWN_EGG);
                     }).build());
 

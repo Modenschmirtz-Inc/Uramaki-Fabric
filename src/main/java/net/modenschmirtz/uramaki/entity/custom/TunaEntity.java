@@ -1,26 +1,20 @@
 package net.modenschmirtz.uramaki.entity.custom;
 
-import com.mojang.logging.LogUtils;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.passive.SchoolingFishEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
-import net.modenschmirtz.uramaki.entity.ModEntities;
 import net.modenschmirtz.uramaki.item.ModItems;
-import org.slf4j.Logger;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.animation.*;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class TunaEntity extends SchoolingFishEntity implements GeoEntity {
-    private final AnimatableInstanceCache animatableInstanceCache = GeckoLibUtil.createInstanceCache(this);
+    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
     public TunaEntity(EntityType<? extends TunaEntity> entityType, World world) {
         super(entityType, world);
@@ -33,7 +27,7 @@ public class TunaEntity extends SchoolingFishEntity implements GeoEntity {
 
     @Override
     public ItemStack getBucketItem() {
-        return ModItems.TUNA.getDefaultStack();
+        return ModItems.TUNA_BUCKET.getDefaultStack();
     }
 
     @Override
@@ -58,7 +52,7 @@ public class TunaEntity extends SchoolingFishEntity implements GeoEntity {
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
-        return animatableInstanceCache;
+        return cache;
     }
 
     @Override
@@ -72,7 +66,7 @@ public class TunaEntity extends SchoolingFishEntity implements GeoEntity {
             if (event.isMoving()) {
                 event.getController().setAnimationSpeed(1f);
             }else{
-                event.getController().setAnimationSpeed(0.1f);
+                event.getController().setAnimationSpeed(0.25f);
             }
         }else {
             event.getController().setAnimation(RawAnimation.begin().then("flop", Animation.LoopType.LOOP));
