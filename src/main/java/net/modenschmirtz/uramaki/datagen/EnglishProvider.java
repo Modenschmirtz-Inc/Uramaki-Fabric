@@ -3,6 +3,7 @@ package net.modenschmirtz.uramaki.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.modenschmirtz.uramaki.entity.ModEntities;
 import net.modenschmirtz.uramaki.item.ModItemGroups;
 import net.modenschmirtz.uramaki.item.ModItems;
 
@@ -26,6 +27,8 @@ public class EnglishProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.COOKED_COD_FILLET, "Cooked Cod Fillet");
         translationBuilder.add(ModItems.COOKED_SALMON_FILLET, "Cooked Salmon Fillet");
         translationBuilder.add(ModItems.COOKED_TUNA_FILLET, "Cooked Tuna Fillet");
+
+        translationBuilder.add(ModEntities.TUNA, "Tuna");
 
         translationBuilder.add(ModItemGroups.URAMAKI_ITEM_GROUP.getDisplayName().getString(), "Uramaki");
     }
