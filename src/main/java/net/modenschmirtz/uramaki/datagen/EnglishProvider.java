@@ -32,5 +32,7 @@ public class EnglishProvider extends FabricLanguageProvider {
         translationBuilder.add(ModEntities.FISH_PROJECTILE, "Fish");
 
         translationBuilder.add(ModItemGroups.URAMAKI_ITEM_GROUP.getDisplayName().getString(), "Uramaki");
+
+        translationBuilder.add("sounds.uramaki.fish_splat", "Fish Splat");
     }
 }
