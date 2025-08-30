@@ -1,13 +1,10 @@
 package net.modenschmirtz.uramaki.entity.render;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.util.Identifier;
 import net.modenschmirtz.uramaki.Uramaki;
 import net.modenschmirtz.uramaki.entity.custom.FishProjectile;
 import software.bernie.geckolib.model.GeoModel;
 
-@Environment(EnvType.CLIENT)
 public class FishProjectileModel extends GeoModel<FishProjectile> {
     @Override
     public Identifier getModelResource(FishProjectile entity) {

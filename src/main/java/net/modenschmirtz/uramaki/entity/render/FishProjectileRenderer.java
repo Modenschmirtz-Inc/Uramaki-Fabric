@@ -1,7 +1,5 @@
 package net.modenschmirtz.uramaki.entity.render;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
@@ -9,7 +7,6 @@ import net.minecraft.util.math.RotationAxis;
 import net.modenschmirtz.uramaki.entity.custom.FishProjectile;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
-@Environment(EnvType.CLIENT)
 public class FishProjectileRenderer extends GeoEntityRenderer<FishProjectile> {
     public FishProjectileRenderer(EntityRendererFactory.Context renderManager) {
         super(renderManager, new FishProjectileModel());

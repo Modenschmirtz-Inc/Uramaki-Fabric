@@ -29,6 +29,7 @@ public class EnglishProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.TUNA_SPAWN_EGG, "Tuna Spawn Egg");
 
         translationBuilder.add(ModEntities.TUNA, "Tuna");
+        translationBuilder.add(ModEntities.FISH_PROJECTILE, "Fish");
 
         translationBuilder.add(ModItemGroups.URAMAKI_ITEM_GROUP.getDisplayName().getString(), "Uramaki");
     }

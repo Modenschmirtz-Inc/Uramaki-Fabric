@@ -1,7 +1,5 @@
 package net.modenschmirtz.uramaki.entity;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -13,7 +11,6 @@ import net.modenschmirtz.uramaki.Uramaki;
 import net.modenschmirtz.uramaki.entity.custom.FishProjectile;
 import net.modenschmirtz.uramaki.entity.custom.TunaEntity;
 
-@Environment(EnvType.CLIENT)
 public class ModEntities {
     public static final EntityType<TunaEntity> TUNA = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(Uramaki.MOD_ID, "tuna"),
