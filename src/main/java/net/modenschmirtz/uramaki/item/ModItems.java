@@ -14,11 +14,10 @@ import net.minecraft.util.Rarity;
 import net.modenschmirtz.uramaki.Uramaki;
 import net.modenschmirtz.uramaki.entity.ModEntities;
 import net.modenschmirtz.uramaki.item.components.ModFoodComponents;
-import net.modenschmirtz.uramaki.item.custom.TunaItem;
 
 public class ModItems {
 
-    public static final Item TUNA = registerItem("tuna", new TunaItem(new Item.Settings().food(ModFoodComponents.TUNA)));
+    public static final Item TUNA = registerItem("tuna", new Item(new Item.Settings().food(ModFoodComponents.TUNA)));
     public static final Item COOKED_TUNA = registerItem("cooked_tuna", new Item(new Item.Settings().food(ModFoodComponents.COOKED_TUNA)));
     public static final Item GOLDEN_FISH = registerItem("golden_fish", new Item(new Item.Settings().food(ModFoodComponents.GOLDEN_FISH).rarity(Rarity.RARE)));
 
@@ -37,6 +36,7 @@ public class ModItems {
                     SoundEvents.ITEM_BUCKET_EMPTY_FISH,
                     new Item.Settings().maxCount(1).component(DataComponentTypes.BUCKET_ENTITY_DATA, NbtComponent.DEFAULT)
             ));
+
     public static final Item TUNA_SPAWN_EGG = registerItem("tuna_spawn_egg", new SpawnEggItem(ModEntities.TUNA, 0xeff0f2, 0x62728c, new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {

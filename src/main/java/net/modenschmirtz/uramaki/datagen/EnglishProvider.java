@@ -25,8 +25,8 @@ public class EnglishProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.COOKED_COD_FILLET, "Cooked Cod Fillet");
         translationBuilder.add(ModItems.COOKED_SALMON_FILLET, "Cooked Salmon Fillet");
         translationBuilder.add(ModItems.COOKED_TUNA_FILLET, "Cooked Tuna Fillet");
-        translationBuilder.add(ModItems.TUNA_SPAWN_EGG, "Tuna Spawn Egg");
         translationBuilder.add(ModItems.TUNA_BUCKET, "Bucket of Tuna");
+        translationBuilder.add(ModItems.TUNA_SPAWN_EGG, "Tuna Spawn Egg");
 
         translationBuilder.add(ModEntities.TUNA, "Tuna");
 
