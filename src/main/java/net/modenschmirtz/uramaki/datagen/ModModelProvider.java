@@ -35,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COOKED_SALMON_FILLET, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_TUNA_FILLET, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.TUNA_BUCKET, Models.GENERATED);
         itemModelGenerator.register(ModItems.TUNA_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     }
 }
